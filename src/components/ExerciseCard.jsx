@@ -4,7 +4,7 @@ import { Button, Stack, Typography } from "@mui/material";
 
 const ExerciseCard = ({ exercise }) => {
   return (
-    <Link to={`/exercise/${exercise.id}`}>
+    <Link to={`/exercise/${exercise.id}`} style={{ textDecoration: "none" }}>
       <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
       <Stack direction="row">
         <Button
@@ -40,7 +40,6 @@ const ExerciseCard = ({ exercise }) => {
         pb="10px"
         textTransform="capitalize"
         fontSize="24px"
-        textDecoration="none"
       >
         {exercise.name}
       </Typography>
